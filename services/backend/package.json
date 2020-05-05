@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "npm-run-all --parallel start playground",
+    "playground": "graphql playground"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.0.0-beta.4",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0-beta.4",
+    "graphql-cli": "^3.0.14",
+    "lerna": "^3.20.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3",
+    "yarn-run-all": "^3.1.1"
+  }
+}
